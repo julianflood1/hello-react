@@ -10,10 +10,10 @@ class NewTicketForm extends React.Component {
   }
 
   handleNewTicketFormSubmission(event) {
-    event.preventDefault()
+    event.preventDefault();
     const { _names, _location, _issue } = this.refs;
     var newTicket = new Ticket(_names.value, _location.value, _issue.value);
-    console.log(this);
+
     this.props.onNewTicketCreation(newTicket);
     this.props.hideFormAfterSubmission();
   }
@@ -49,6 +49,6 @@ class NewTicketForm extends React.Component {
 NewTicketForm.propTypes = {
   onNewTicketCreation: PropTypes.func,
   hideFormAfterSubmission: PropTypes.func
-}
+};
 
 export default NewTicketForm;
