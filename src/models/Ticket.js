@@ -7,7 +7,6 @@ class Ticket {
     this.description = description;
     this.timeOpened = new Moment();
     this.timeSinceOpened =  "a few seconds";
-    console.log(this);
   }
 
   setTimeSinceOpened() {

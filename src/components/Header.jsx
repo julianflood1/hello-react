@@ -1,8 +1,12 @@
 import React from "react";
+import styles from './styles/App.css';
+
 
 function Header(){
   return (
-    <h1>Help Queue</h1>
+    <div className = {styles.header}>
+      <h1>Help Queue</h1>
+    </div>
   );
 }
 

@@ -5,7 +5,7 @@ import NewTicketControl from './NewTicketControl';
 class Queue extends React.Component {
 
 constructor(props) {
-  console.log('constructor');
+  // console.log('constructor');
   super(props);
   this.state = {
     masterTicketList: [],
